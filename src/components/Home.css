@@ -1,0 +1,242 @@
+.mainlogo{
+    height: 70vh;
+    width: 100%;
+}
+
+#logoimg{
+    width: 80vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whoarewe{
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    height: 100vh;
+    position:absolute;
+}
+
+.wrapper{
+    position: relative;
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.retangulo{
+    margin-top: -7vh;
+    margin-left: 20vh;
+    width: 30vw;
+    height: 140vh;
+    background-color: #0098DE;
+    border-radius: 50px;
+
+}
+
+#foto{
+    display: block;
+    width: 25vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+.text h1{
+    color: #0098DE;
+}
+.text {
+    width: 30%;
+    color: #979797;
+
+}
+
+.button{
+    margin: auto;
+    width: 60%;
+    height: 5vh;
+    margin-top: 5%;
+    background-color: #0098DE;
+    border-radius: 10px;
+    text-align: center;
+ 
+    
+}
+.orcamento, .quemsomos {
+    color: #fff;
+    line-height: 5vh;
+    text-decoration: none;
+
+}
+
+.projetos{
+    position: absolute;
+    margin-top: -55vh;
+    width: 95vw;
+    height: 40vh;
+    background-color: rgba(127, 202, 237, 0.5);
+    border-radius:0px 50px 50px 0px;
+    text-align: center;
+
+}
+
+.projetos img{
+    width: 20%;
+    margin-left: 5vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.diferenciais{
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+
+}
+.dif-wrapper{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.diferenciais h1,h2{
+    color: #0098DE;
+    text-align: center;
+
+}
+.img-text{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-text p{
+    color: #979797;
+    margin-left: 5%;
+    width: 30%;
+}
+
+.img-text img{
+    margin-left: 5%;
+    width: 15%;
+}
+
+.diferenciais h2{
+    margin-top: 7vh;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+
+}
+.servicos h1{
+    color: #0098DE;
+}
+.services-grid{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    width: 40%;
+    height: 35%;
+    align-content: space-between;    
+
+}
+.services-grid img{
+    width: 80%;
+}
+
+.servicos p{
+    margin-top: 5vh;
+    width:45%;
+    text-align: center;
+    color: #979797;
+}
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+}
+
+.depoimentos h1{
+    color: #0098DE;
+    margin-bottom: 10vh;
+}
+
+.dep-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.dep-wrapper img{
+    width: 40%;
+    margin-bottom: 7vh;
+    box-shadow: -20px -18px 7px #0098DE;
+    border-radius: 30px;
+
+}
+
+.depoimento{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.depoimento p{
+    color: #979797;
+}
+
+.parcerias {
+    color: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parcerias h1{
+    color: #0098DE;
+}
+
+.grid1{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid1 img{
+    width: 70%;
+    place-self: center;
+
+}
+
+.grid2{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+.grid2 img{
+    width: 70%;
+    place-self: center;
+}

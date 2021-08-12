@@ -1,0 +1,260 @@
+
+.background{
+    margin-top: -15vh;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.content{
+    margin-top: -20vh;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    width: 30%;
+    height: 100vh;
+    background-color: #0098DE;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1{
+    color: #FFFFFF;
+}
+.info h2{
+    color: #FFFFFF;
+}
+.info p{
+    width: 85%;
+    color: white;
+}
+.valores{
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+.valores img{
+    margin-top: 5vh;
+    width: 70%;
+}
+.valores h1{
+    color: #0098DE;
+}
+
+.members{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.membt{
+    width: 30vw;
+    height: 55vh;
+}
+.membt h1{
+    text-align: center;
+    color: #0098DE;
+}
+.membt p{
+    color: #979797;
+    margin-top: 5vh;
+    width: 95%;
+}
+
+.members img{
+    width: 70vh;
+    height: 50vh;
+    margin-left: 10vw;
+}
+
+.servicoss{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background: none;
+
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    height: 140vh;
+    
+}
+.services h1{
+    color: #0098DE;
+
+}
+.servicoss img{
+    width: 40%;
+}
+.servicos1{
+    display:grid;
+    height: 70vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: space-around;  
+    row-gap: 5vh;
+    
+}
+.servicos2{
+    height: 70vh;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: space-around;    
+    row-gap: 5vh;
+
+}
+
+.servicos1 p{
+    text-align: left;
+    justify-self: start;
+    width: 90%;
+    margin: auto 0;
+    color: #979797;
+
+}
+.servicos2 p{
+    text-align: right;
+    justify-self: end;    
+    width: 90%;
+    margin: auto 0;
+    color: #979797;
+}
+.servicos1 img{
+    place-self: center;
+}
+.servicos2 img{
+    place-self: center;
+}
+.buttonserv{
+    margin-top: 5vh;
+    width: 15rem;
+    background-color: #0098DE;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.qualidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.qualidade img{
+    width: 50%;
+    margin-top: 5vh;
+}
+
+.qualidade h1{
+    color: #0098DE;
+}
+
+.cor{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    height: 90vh;
+}
+.cor img{
+    margin-top: 5vh;
+    width: 30%;
+}
+.cor h1{
+    color: #0098DE;
+}
+.cor p{
+    color: #979797;
+
+}
+.cortex{
+    margin-right: 9vw;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50vh;
+    width: 70%;
+    text-align: right;
+}
+.cortex p{
+    width: 15rem;
+}
+.objetivos{
+    margin-left: 9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    width: 70%;
+
+
+}
+
+.buttonsel{
+    margin-top: 5vh;
+    width: 15rem;
+    background-color: #0098DE;
+    border-radius: 10px;
+    text-align: center;
+}
+.selective{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.selective h1, .selective p{
+    color: #0098DE;
+}
+
+.sImg{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+#side{
+    width: 10%;
+}
+
+#midle{
+    margin-top: 10vh;
+    width: 10%;
+}
