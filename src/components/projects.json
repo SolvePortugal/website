@@ -2,7 +2,8 @@
 [ 
     { 
         "id":1,
-        "title":"iniciativa TechUp",
+        "title":"Iniciativa TechUp",
+        "texto":"Atua como uma espécie de vitrine para produtos e tecnologias inovadoras nas áreas de engenharia. A Iniciativa TechUp tem como objetivo fomentar esta busca e divulgar o conhecimento já existente. ",
         "cover":"/images/techupp.png",
         "img":["/images/techlogo.png"],
         "descricao":"A iniciativa TechUp consiste na apresentação de tecnologias inovadoras e emergentes do mercado das engenharias para os estudantes, através de sessões dinâmicas e interativas. A partir deste tronco temos as suas ramificações, nomeadamente as competições acadêmicas embasadas nos temas apresentados durantes as sessões e vídeos informativos a respeito de tantas outras novas tecnologias, sejam elas existentes ou a serem implementadas num futuro hipotético. Esta iniciativa de estudantes para estudantes visa, acima de tudo, criar pontes entre as empresas e aqueles que poderão vir a ser seus futuros trabalhadores e despertar a curiosidade dos estudantes neste cenário das engenharias, cativando-os a buscarem novos propósitos de contribuição para com a sociedade.",
@@ -12,6 +13,7 @@
     { 
         "id":2,
         "title":"Economia circular",
+        "texto":"Nosso primeiro projeto baseou-se na recolha e análise de Resíduos de Equipamentos Elétricos e Eletrônicos no campus da FCTUC.",
         "cover":"/images/ucproj.png",
         "img":["/images/ucc.png"],
         "descricao":"Nosso projeto E-Waste at the University of Coimbra, inserido no âmbito da economia circular dos REEE’s (Resíduos de Equipamentos Eletrícos e Eletrônicos), realizou três ações de sensibilização, recolheu mais de meia tonelada de resíduos, além de ser o primeiro projeto realizado pela Solve - Soluções em Engenharia.O projeto EWUC contou com várias parcerias que ajudaram no seu desenvolvimento, dentre elas, a WeeeCycle, que junto dos WEEEPontos colocados em diferentes locais da FCTUC, conseguiu recolher o número de resíduos anteriormente citado. Nossa equipe de economia circular se divide atualmente em Conscientização & Marketing, Gestão de Resíduos e Gestão de Recursos. Com o sucesso do projeto EWUC, esse grupo se propõe a oferecer serviços neste setor, aperfeiçoando a gestão de resíduos e a sustentabilidade das empresas interessadas.",
@@ -21,19 +23,21 @@
         { 
         "id":3,
         "title":"Conferências EnGenious",
+        "texto":"As conferências EnGenious focam no empreendedorismo, proporcionando partilha de conhecimento, um maior contato entre alunos e empresas, apresentação de novos projetos e recrutamentos.",
         "cover":"/images/enginiousproj.png",
         "img":["/images/enginiouslogo.png"],
         "descricao":"O EnGenious foi o primeiro evento oficial da Solve – Soluções em Engenharia e tinha seis principais objetivos, sendo eles: o lançamento da marca, anunciar o recrutamento de membros, se aproximar dos stakeholders (oradores), lançar o projeto E-Waste UC (EWUC), a assinatura de protocolos e a aproximação com os alunos. Teve um número total de 75 participantes, 4 oradores e 2 principais parcerias. Todos os membros constituintes da Solve, na época, participaram para o êxito do evento. Com o sucesso do EnGenious, viu-se a oportunidade de expandir o evento em forma de conferências anuais, com foco no empreendedorismo, partilhando conhecimento, fomentando o contato entre alunos e empresas, apresentando novos projetos e recrutamentos. A 2ª Edição está próxima. Are you ready for something...EnGenious?",
-        "members":[" Coordenador e Idealizador ","\n","Denner Nunes ","\n","\n","Gestão de Resíduos ","\n","José Heitor Soares","\n"," Pedro Soares ","\n"," Bruno Ramalho ","\n","\n","Gestão de Recursos","\n","Francisco Cavaleiro","\n","Gustavo Deretti ","\n","Tito Sala ","\n","\n","Marketing e Sensibilização","\n","Bruno Clemente","\n"," Bárbara Carvalho","\n","Caio Battaglia","\n"," Mariana Fernandes ","\n","Guilherme Tassari","\n","\n","Colaboradores","\n"," Isaac Moreira","\n"," João Sgotti","\n"," Letícia Lopes","\n"," Fábio Pedrocchi","\n"," Ricardo Gameiro","\n"," Diogo Guerreiro ","\n"," Pedro Peratello."],
+        "members":["1ª EDIÇÃO","\n","Coordenadora Geral","\n","Carolina Gameiro","\n","\n","Co-coordenadores","\n","Gabriel Cathoud e Denner Nunes","\n","\n","Logística","\n","José Heitor Soares","\n","\n","Financeiro","\n","Ricardo Gameiro","\n","\n","Comercial","\n","Diogo Guerreiro","\n","\n","Recursos Humanos","\n","Bárbara Carvalho","\n","\n","Coffee-Break","\n","Pedro Henrique Peratello","\n","\n"," Membros ajudantes:","\n","João Felipe Azevedo, Bruno Clemente, João Sgotti, Isaac Moreira, Francisco Cavaleiro e Thiago Pongelupe."],
         "slide":["/images/eng1.png","/images/eng2.png","/images/eng3.png","/images/eng4.png","/images/eng5.png","/images/eng6.png","/images/eng7.png","/images/eng8.png","/images/eng9.png","/images/eng10.png","/images/eng11.png"]
         },
         { 
         "id":4,
         "title":"ESDG17",
+        "texto":"Um dos nossos orgulhos é ter tido a oportunidade de participar com a construção de um capítulo inserido na ODS 17: Parcerias e Meios de Implementação na Encyclopedia for the United Nations Sustainable Development Goals.    ",
         "cover":"/images/esdproj.png",
         "img":["/images/esdglogo.png"],
         "descricao":"The Encyclopedia of the UN Sustainable Development Goals foi um projeto no qual surgiu a oportunidade da Solve participar com a construção de um capítulo inserido na ODS (Objetivos de Desenvolvimento Sustentável) número 17, conhecido como ODS de Parcerias e Meios de Implementação. Ele contou com a participação dos membros Denner Nunes e José Heitor Soares na construção do capítulo, no qual foram escritas quase 13 páginas, mostrando o contexto da empresa júnior e da educação pro desenvolvimento sustentável dentro das instituições de ensino superior, com foco no trabalho incipiente que a Solve havia começado a desenvolver na época, através do projeto E-Waste of the University of Coimbra. A professora Helena Gervázio foi a mentora dos membros da Solve neste projeto, ajudando na construção do documento. A professora Renata Soares também auxiliou os membros na escrita em língua inglesa. O projeto passou por processos iterativos de melhoras de trabalho enquanto era enviado para a Springer, editora responsável. O capítulo já foi aprovado e está em fase de produção.",
-        "members":[" Coordenador e Idealizador ","\n","Denner Nunes ","\n","\n","Gestão de Resíduos ","\n","José Heitor Soares","\n"," Pedro Soares ","\n"," Bruno Ramalho ","\n","\n","Gestão de Recursos","\n","Francisco Cavaleiro","\n","Gustavo Deretti ","\n","Tito Sala ","\n","\n","Marketing e Sensibilização","\n","Bruno Clemente","\n"," Bárbara Carvalho","\n","Caio Battaglia","\n"," Mariana Fernandes ","\n","Guilherme Tassari","\n","\n","Colaboradores","\n"," Isaac Moreira","\n"," João Sgotti","\n"," Letícia Lopes","\n"," Fábio Pedrocchi","\n"," Ricardo Gameiro","\n"," Diogo Guerreiro ","\n"," Pedro Peratello."],
+        "members":["Autor e Editor","\n","Denner Nunes","\n","\n","Autor e Editor","\n","José Heitor Soares","\n","\n","Mentoras:","\n","Profª Helena Gervázio","\n","Profª Renata Soares"],
         "slide":["/images/esdg1.png","/images/esdg2.png"]
         }
     ]

@@ -1,16 +1,16 @@
 .mainlogo{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.bold-text{
+    color: #0098DE;
+    font-weight: bold;
+}
 #logoimg{
-    width: 80vh;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
 }
 
 .whoarewe{
@@ -54,23 +54,30 @@
 
 .button{
     margin: auto;
-    width: 60%;
-    height: 5vh;
+    width: 12rem;
+    padding: 1vh 0.5vw;
     margin-top: 5%;
     background-color: #0098DE;
     border-radius: 10px;
     text-align: center;
- 
-    
+    text-decoration: none;
+    list-style: none;  
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
 }
 .orcamento, .quemsomos {
     color: #fff;
-    line-height: 5vh;
+    line-height: 150%;
     text-decoration: none;
 
 }
 
 .projetos{
+    display: flex;
+    justify-content: center;
     position: absolute;
     margin-top: -55vh;
     width: 95vw;
@@ -83,6 +90,7 @@
 
 .projetos img{
     width: 20%;
+    height: fit-content;
     margin-left: 5vw;
     position: relative;
     top: 50%;
@@ -105,6 +113,16 @@
     text-align: center;
 
 }
+
+.diferenciais h2{
+    color: #979797;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+
 .img-text{
     margin-top: 7vh;
     display: flex;
@@ -170,38 +188,8 @@
     background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
 }
 
-.depoimentos h1{
-    color: #0098DE;
-    margin-bottom: 10vh;
-}
-
-.dep-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    width: 90%;
-
-}
-
-.dep-wrapper img{
-    width: 40%;
-    margin-bottom: 7vh;
-    box-shadow: -20px -18px 7px #0098DE;
-    border-radius: 30px;
-
-}
-
-.depoimento{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.depoimento p{
-    color: #979797;
+.depoimentos video{
+    width: 60vw;
 }
 
 .parcerias {
@@ -231,7 +219,7 @@
 .grid2{
     width: 50%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
 
@@ -240,3 +228,342 @@
     width: 70%;
     place-self: center;
 }
+
+@media (max-width: 850px) {
+    .wrapper{
+        position: relative;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .retangulo{
+        margin: 10vh 10% 0;
+        width: 80%;
+        height: 140vh;
+        background-color: #0098DE;
+        border-radius: 50px;
+    
+    }
+    
+    #foto{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+
+    .text h1{
+        color: #0098DE;
+    }
+
+    .text {
+        width: 100%;
+        color: #979797;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text p{
+        margin: 0 20%;
+        text-align: initial;
+
+    }
+
+    .projetos{
+        position: absolute;
+        flex-direction: column;
+        margin-top: -75vh;
+        width: 95vw;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .projetos img{
+        margin:5% 0;
+        width: 20%;
+        position: relative;
+        top: unset;
+        transform: unset;
+
+    }
+
+    .dif-wrapper{
+        margin: 0 10%   ;
+    }
+
+    .img-text{
+        margin-top: 7vh;
+        flex-direction: column-reverse;
+    }
+    
+    .img-text p{
+        margin-left: 0;
+        width: 100%;
+        text-align: initial;
+
+    }
+    
+    .img-text img{
+        margin-top: 5%;
+        margin-left: 0;
+        width: 40%;
+
+    }
+    
+    .diferenciais h2{
+        margin-top: 7vh;
+    }
+    
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        height: fit-content;
+    
+    }
+    
+    .services-grid{
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 5%;
+        align-content: center;
+        place-items: center;        
+    
+    }
+    .services-grid img{
+        width: 80%;
+    }
+    
+    .servicos p{
+        margin-top: 10vh;
+        width:45%;
+        text-align: center;
+        color: #979797;
+        text-align: initial;
+
+    }
+
+    .depoimentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    }
+    
+    .depoimentos video{
+        width: 80%;
+    }
+    
+    .parcerias {
+        color: #E5E5E5;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .parcerias h1{
+        color: #0098DE;
+    }
+    
+    .grid1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid1 img{
+        width: 70%;
+        place-self: center;
+    
+    }
+    
+    .grid2{
+        margin-top: 5vh;
+        grid-template-columns: 1fr 1fr ;
+        grid-row-gap: 5%;
+        margin-bottom: 30vh;
+    }
+    .grid2 img{
+        width: 70%;
+        place-self: center;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    #logoimg{
+        width: 75%;
+    }
+
+    .wrapper{
+        position: relative;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .retangulo{
+        margin: 10vh 10% 0;
+        width: 80%;
+        height: 112vh;
+        background-color: #0098DE;
+        border-radius: 50px;
+    
+    }
+    
+    #foto{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+
+    .text h1{
+        color: #0098DE;
+    }
+
+    .text {
+        width: 100%;
+        color: #979797;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text p{
+        margin: 0 20%;
+        text-align: initial;
+    }
+
+    .projetos{
+        position: absolute;
+        flex-direction: column;
+        margin-top: -75vh;
+        width: 95vw;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .projetos img{
+        margin:5% 0;
+        width: 35%;
+        position: relative;
+        top: unset;
+        transform: unset;
+
+    }
+
+    .dif-wrapper{
+        margin: 0 10%;
+    }
+
+    .img-text{
+        margin-top: 7vh;
+        flex-direction: column-reverse;
+    }
+    
+    .img-text p{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .img-text img{
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    
+    .diferenciais h2{
+        margin-top: 7vh;
+    }
+    
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        height: fit-content;
+        margin: 0 10%;
+    
+    }
+    
+    .services-grid{
+        margin-top: 10vh;
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 5%;
+        align-content: center;
+        place-items: center;        
+    
+    }
+    .services-grid img{
+        width: 80%;
+    }
+    
+    .servicos p{
+        margin-top: 10vh;
+        width:100%;
+        text-align: initial;
+        color: #979797;
+    }
+
+    .depoimentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
+    }
+    
+    .depoimentos video{
+        width: 80%;
+    }
+    
+    .parcerias {
+        color: #E5E5E5;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .parcerias h1{
+        color: #0098DE;
+    }
+    
+    .grid1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid1 img{
+        width: 70%;
+        place-self: center;
+    
+    }
+    
+    .grid2{
+        margin-top: 5vh;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 5%;
+        margin-bottom: 30vh;
+    }
+    .grid2 img{
+        width: 70%;
+        place-self: center;
+    }
+    
+}
+
+
+

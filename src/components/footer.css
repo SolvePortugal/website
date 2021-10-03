@@ -6,11 +6,13 @@
     background-color: #474748;
     justify-items: start;
     justify-content: space-between;    
-
-
+    padding-bottom: 2%;
 }
 
-
+.contactos-social{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
 
 #logof{
     place-self: center;
@@ -36,11 +38,16 @@
 #location{
     margin-top: 20px;
     height: 30px;
+    width: 30px;
 }
 .contactos p{
     color: #fff;
     margin: 2vh 0vh;
     margin-left: 20px;
+}
+
+.contactos-social > img{
+    padding: 2px 0;
 }
 
 .final{
@@ -64,3 +71,42 @@
 #phone{
     height: 30px;
 }
+
+@media (max-width: 850px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 0 10% 0;
+    }
+    
+    .footer h3{
+        margin-top: 10%;
+    }
+    .contactos-social{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 15%;
+        gap: 5%;
+        align-items: center;
+    }
+    .contactos-social > p{
+        width: fit-content;
+        place-self: initial;
+        margin: 0;
+    }
+    .adress{
+        padding: 0 15%;
+    }
+    
+    .final{
+        padding: 0 15%;
+        margin: 0;
+    }
+
+    .final img{
+        place-self: center; 
+        margin: 0 !important;
+    }
+}   

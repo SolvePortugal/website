@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useRef } from 'react';
 import "../App.css";
 import "./contact.css";
 import Footer from "./footer";
+import emailjs from 'emailjs-com';
 
-function contact() {
+export const Contact = () => {
   const key = process.env.REACT_APP_MAPS_KEY;
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_nqrk0gt', form.current, 'user_0TcaJrATTOu8IIKOO27Zq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
 
   return (
     <div>
       <div
-        className="background"
+        className="background-contact"
         style={{
-          background: `url('${process.env.PUBLIC_URL}/images/contactb.png')`,
+          background: `url('${process.env.PUBLIC_URL}/images/contactb.png')`,backgroundRepeat: 'no-repeat', backgroundPosition: 'center' ,backgroundSize: 'cover'
         }}
       ></div>
       <div className="content">
@@ -44,25 +59,26 @@ function contact() {
           </div>
           <div className="redes">
             <h2>Redes Sociais:</h2>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/social2.png`}
-              alt="social"
-            />
+            <div className='redes-icons'>
+              <img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
+              <img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
+              <img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
+            </div>
           </div>
         </div>
         <div className="form">
           <h2>Entre em contato conosco:</h2>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <p>Nome:</p>
-            <input type="text" name="name" /> <br></br>
+            <input type="text" name="name" required/> <br></br>
             <p>E-mail:</p>
-            <input type="text" name="mail" />
+            <input type="text" name="mail" required/>
             <br></br>
             <p>Telefone:</p>
             <input type="text" name="phone" />
             <br></br>
             <p>Mensagem:</p>
-            <input type="text" name="message" />
+            <input type="text" name="message" required/>
             <br></br>
             <br></br>
             <br></br>
@@ -77,17 +93,17 @@ function contact() {
       </div>
       <div className="mapa">
         <iframe
-          width="600"
-          height="450"
+          title="Mapa"
+          width="80%"
+          height="60%"
           loading="lazy"
-          allowfullscreen
+          allowFullScreen
           src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbdGsShT5Ig0RuaZCe0dkRWM&key=${key}`}
         ></iframe>
       </div>
-      <div className="end"></div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
 
-export default contact;
+export default Contact;

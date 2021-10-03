@@ -1,16 +1,31 @@
-import React ,{useState}from 'react'
+import React ,{useState, useEffect}from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
+
 
 function Navbar() {
     const[click,setClick]=useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const [showNav,setShowNav]= useState(true);
+    const [scrollPos,setScrollPos]= useState(0);
 
+
+    function handleScroll(){
+        setScrollPos(document.body.getBoundingClientRect().top);
+        setShowNav(document.body.getBoundingClientRect().top> scrollPos);
+
+    }
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll);
+        return () => {
+            window.removeEventListener('scroll',handleScroll);
+        }
+    })
    
     return (
         <>
-           <nav className="navbar">
+           <nav className={ `${'navbar'} ${showNav ? 'show-navbar' :  'hide-navbar'}`}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 <img src={`${process.env.PUBLIC_URL}/images/Logo.png`} alt="logo"/>

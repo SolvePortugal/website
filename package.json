@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "emailjs-com": "^3.2.0",
     "google-maps-react": "^2.0.6",
     "react": "^17.0.2",
     "react-alice-carousel": "^2.5.1",
@@ -15,6 +16,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-simple-image-slider": "^2.1.2",
+    "react-video": "^1.5.3",
+    "react.video": "^1.0.14",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

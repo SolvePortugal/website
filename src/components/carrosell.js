@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {Link, useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import ProjectData from "./projects.json";
 
 
@@ -12,20 +12,22 @@ function CarouselComponent() {
         <div>
             {ProjectData.map((postDetail,index)=>{
                 
-            if(postDetail.id==id){
+            if(postDetail.id===Number(id)){
 
-                return  <div className="carousel-wrapper">
-                <Carousel showThumbs={false} width="80%" showStatus={false} dynamicHeight={true} autoPlay={true} infiniteLoop={true} interval="6000" showArrows={false}>
+                return  <div key={index} className="carousel-wrapper">
+                <Carousel showThumbs={false} width="80%" showStatus={false} dynamicHeight={true} autoPlay={true} infiniteLoop={true} interval="6000" showArrows={true}>
                   {postDetail.slide.map(
                       (imagens,index)=>{
-                      return<div>
-                            <img className="carousell-img" src={imagens} />
-                      </div>
+                        if(imagens.length > 0){
+                          return<div key={index}>
+                            <img key={index} className="carousell-img" src={imagens} alt={postDetail.id}/>
+                          </div>
+                        }
                   })}
                 </Carousel>
               </div>
             }
-        })}
+        return null})}
         </div>
         
      

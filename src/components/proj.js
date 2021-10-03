@@ -12,7 +12,7 @@ import ProjectData from "./projects.json";
 function proj() {
   return (
     <div>
-        <div className='background'   style={{background: `url('${process.env.PUBLIC_URL}/images/projback.png')`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}></div>
+        <div className='background'   style={{background: `url('${process.env.PUBLIC_URL}/images/projback.png')`,backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}></div>
         <div className="conteudo">
             <div className='projc'>
                 <h1>Projetos</h1>
@@ -25,10 +25,13 @@ function proj() {
                 <div className="projselect">
                     {ProjectData.map((postDetail,index)=>{
 
-                        return <div>
+                        return <div key={postDetail.id}>
                             <Link to={`/projects/${postDetail.id}`}> 
                             <img  src={postDetail.cover}alt="tech"/>   
-                            <p>{postDetail.title}</p>
+                            <div className="proj-info">
+                                <p className="proj-name">{postDetail.title}</p>
+                                <p className="proj-text">{postDetail.texto}</p>
+                            </div>
                             </Link>
                         </div>
                     })}
@@ -36,7 +39,7 @@ function proj() {
             </div>
             <div className="finalproj">
                 <h2>Aqui estão alguns exemplos práticos do que nós da Solve já fizemos, agora o que podemos fazer por você?</h2>
-                <div className='projbutton'>
+                <div className='button'>
                     <Link to="/contacts" className="projbutton" >Contacte-nos!</Link>
                 </div>
             </div>

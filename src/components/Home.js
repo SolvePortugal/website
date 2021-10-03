@@ -6,8 +6,6 @@ import Footer from './footer'
 
 
 
-
-
 function Home() {
   return (
       <div>
@@ -40,9 +38,9 @@ function Home() {
                     <h1>Diferenciais</h1>
                     <div className="img-text">
                     <img  src={`${process.env.PUBLIC_URL}/images/brain.png`} alt="brain"/>   
-                    <p>A Solve é a primeira e única Júnior Iniciativa em Portugal com foco na sustentabilidade. Dispomos do auxílio de professores altamente qualificados da FCTUC na execução de nossos projetos e serviços. Nosso projeto E-Waste at the University of Coimbra (EWUC) fez uma coleta de mais de meia tonelada de lixo eletro-eletrônico.<br></br><br></br>Por quê a Solve?<br></br>Somos resultado, somos sustentabilidade, somos a solução.</p>
+                    <p>A Solve é a <span className="bold-text">primeira</span> e <span className="bold-text">única</span> Júnior Iniciativa em Portugal com foco na sustentabilidade. Dispomos do auxílio de professores altamente qualificados da <span className="bold-text">FCTUC</span> na execução de nossos projetos e serviços. Nosso projeto E-Waste at the University of Coimbra (EWUC) fez uma coleta de mais de <span className="bold-text">meia tonelada</span> de lixo eletro-eletrônico.<br></br><br></br><span className="bold-text">Por quê a Solve?</span><br></br>Somos resultado, somos sustentabilidade, somos a solução.</p>
                     </div>
-                    <h2>We SOLVE Your Problem!</h2>
+                    <h2>We <span className="bold-text">SOLVE</span> Your Problem!</h2>
                 </div>
             </div>
             <div className='servicos'>
@@ -60,21 +58,7 @@ function Home() {
                 <p>A Solve - Soluções em Engenharia preza por uma mentalidade sustentável em todos os seus projetos e serviços. Tendo isso em mente, pretendemos atuar em todo o ciclo da Economia Circular, desde a otimização de produtos e processos até a recolha e tratamento de resíduos. Também oferecemos outros serviços de logística e gestão sustentável de processos e produtos.</p>
             </div>
             <div className='depoimentos'>
-                <h1>Depoimentos</h1>
-                <div className='dep-wrapper'>
-                    <div className='depoimento'>
-                        <img  src={`${process.env.PUBLIC_URL}/images/depoi1.png`} alt="depoimento1"/> 
-                        <p>“A Solve é uma das melhores ferramentas que já foram criadas dentro da Universidade de Coimbra para atingir os objetivos do desenvolvimento sustentável, reunindo a força estudantil para a construção de um novo comportamento sustentável das próximas gerações.”<br></br><br></br>Denner Nunes,<br></br>Alumni</p> 
-                    </div>
-                    <div className='depoimento'>
-                        <img  src={`${process.env.PUBLIC_URL}/images/depoi2.png`} alt="depoimento1"/> 
-                        <p>“Foi um enorme prazer ter participado no Engenious organizado pela Solve Portugal, o qual mostrou ter um conjunto de elementos bastante competentes e munidos de um interesse e vontade fora de série. A Solve Portugal mostra já uma competência fenômenal na procura incessante de soluções inovadoras para o mundo empresarial. Um parceiro em ter em conta!”<br></br><br></br>João Bento, <br></br>Manager do Departamento de Melhoria Contínua <br></br>Ansell</p>
-                    </div>
-                    <div className='depoimento'>
-                        <img  src={`${process.env.PUBLIC_URL}/images/depoi3.png`} alt="depoimento1"/> 
-                        <p>“O projeto EWUC foi de grande valor para a Solve e o ambiente acadêmico no qual se encontra. Além de aumentar a conscientização sobre as questões dos resíduos de equipamentos elétricos e eletrônicos (REEEs) e coletar mais de meia tonelada de resíduos, possibilitou o desenvolvimento de conhecimento na Solve e a criação do Grupo de Economia Circular.”<br></br><br></br>José Heitor Soares,<br></br>Alumni</p>
-                    </div>
-                </div>
+                <video controls autostart="true" type="video/mp4" src={`${process.env.PUBLIC_URL}/images/video.mp4`}  muted autoPlay  />
             </div>
             <div className='parcerias'>
                 <h1>Parcerias</h1>
@@ -94,7 +78,9 @@ function Home() {
                     <img  src={`${process.env.PUBLIC_URL}/images/parceria11.png`} alt="parceria"/>  
                     <img  src={`${process.env.PUBLIC_URL}/images/parceria12.png`} alt="parceria"/>  
                     <img  src={`${process.env.PUBLIC_URL}/images/parceria13.png`} alt="parceria"/>  
-                    <img  src={`${process.env.PUBLIC_URL}/images/parceria14.png`} alt="parceria"/>  
+                    <img  src={`${process.env.PUBLIC_URL}/images/parceria14.png`} alt="parceria"/>
+                    <img  src={`${process.env.PUBLIC_URL}/images/parceria15.png`} alt="parceria"/> 
+                    <img  src={`${process.env.PUBLIC_URL}/images/parceria16.svg`} alt="parceria"/>   
                 </div>
             </div>
             <Footer/>

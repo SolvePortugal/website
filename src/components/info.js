@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 function info() {
   return (
     <div>
-        <div className='background'   style={{background: `url('${process.env.PUBLIC_URL}/images/people.png')`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}></div>
+        <div className='background'   style={{background: `url('${process.env.PUBLIC_URL}/images/people.png')`,backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}></div>
         <div className='content'>
             <div className='info'>
                 <h1>Quem Somos</h1>
@@ -34,33 +34,50 @@ function info() {
             <h1>Serviços</h1>
             <div className="servicoss">
                 <div className="servicos1">
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos1.png`} alt="servicos"/>
-                    <p>Estudo e análise da melhoria de um processo de modo a torná-lo mais sustentável</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos2.png`} alt="servicos"/>
-                    <p>Estudo do impacto ambiental de um processo/produto</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos3.png`} alt="servicos"/>
-                    <p>Estudo e análise da sustentabilidade em modelos de negócios</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos4.png`} alt="servicos"/>
-                    <p>Elaboração de manuais de sustentabilidade e economia circular</p>
+                    <div className="service">
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos1.png`} alt="servicos"/>
+                        <p>Estudo e análise da melhoria de um processo de modo a torná-lo mais sustentável</p>
                     </div>
+                    <div className="service">
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos2.png`} alt="servicos"/>
+                        <p>Estudo do impacto ambiental de um processo/produto</p>
+                    </div>
+                    <div className="service">
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos3.png`} alt="servicos"/>
+                        <p>Estudo e análise da sustentabilidade em modelos de negócios</p>
+                    </div>
+                    <div className="service">
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos4.png`} alt="servicos"/>
+                        <p>Elaboração de manuais de sustentabilidade e economia circular</p>
+                    </div>
+                </div>
                 <div className="servicos2">
-                    <p>Gestão de resíduos (tratamento e análise de dados)</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos5.png`} alt="servicos"/>
-                    <p>Plano de redução, reutilização e descarte de resíduos</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos6.png`} alt="servicos"/>
-                    <p>Plano de melhoria da eficiência energética</p>
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos7.png`} alt="servicos"/>
-                    <p>Plano de gestão de água e efluentes</p>           
-                    <img  src={`${process.env.PUBLIC_URL}/images/servicos8.png`} alt="servicos"/>
+                    <div className="service">
+                        <p>Gestão de resíduos (tratamento e análise de dados)</p>
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos5.png`} alt="servicos"/>
+                    </div>
+                    <div className="service">
+                        <p>Plano de redução, reutilização e descarte de resíduos</p>
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos6.png`} alt="servicos"/>
+                    </div>
+                    <div className="service">
+                        <p>Plano de melhoria da eficiência energética</p>
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos7.png`} alt="servicos"/>
+                    </div>
+                    <div className="service">
+                        <p>Plano de gestão de água e efluentes</p>           
+                        <img  src={`${process.env.PUBLIC_URL}/images/servicos8.png`} alt="servicos"/>
+                    </div>
                 </div>
             </div>
-            <div className='buttonserv'>
-                        <Link to="/contacts" className="orcamento" >Faça o seu orçamento!</Link>
+            <div className='button'>
+                <Link to="/contacts" className="orcamento" >Faça o seu orçamento!</Link>
             </div>
         </div>
         <div className="qualidade">
             <h1>Qualidade</h1>
-            <img  src={`${process.env.PUBLIC_URL}/images/qualidade.png`} alt="qualidade"/>
+            <img id="qdesktop" src={`${process.env.PUBLIC_URL}/images/qualidade.png`} alt="qualidade"/>
+            <img id="qmobile" src={`${process.env.PUBLIC_URL}/images/qulidademobile.png`} alt="qualidade"/>
         </div>
         <div className="cor">
             <div className="cortex">
@@ -70,14 +87,14 @@ function info() {
             </div>
             <div className="objetivos">
                 <h1>Objetivos</h1>
-                <p>Trabalho em equipa <br></br>Multidisciplinaridade<br></br>Learn by Doing<br></br>Adaptabilidade<br></br>Espírito Crítico<br></br>Desenvolvimento Sustentável<br></br>Dinamismo com o tecido empresarial<br></br>Extensão do conhecimento</p>
+                <p><span className="dot"></span> Trabalho em equipa <br></br><span className="dot"></span> Multidisciplinaridade<br></br><span className="dot"></span> Learn by Doing<br></br><span className="dot"></span> Adaptabilidade<br></br><span className="dot"></span> Espírito Crítico<br></br><span className="dot"></span> Desenvolvimento Sustentável<br></br><span className="dot"></span> Dinamismo com o tecido empresarial<br></br><span className="dot"></span> Extensão do conhecimento</p>
                 <img  src={`${process.env.PUBLIC_URL}/images/engine.png`} alt="engine"/>
             </div>
         </div>
         <div className="selective">
             <h1>Processo Selectivo</h1>
             <p>Gostaste de nós? Queres entrar para a equipa?</p>
-            <div className='buttonsel'>
+            <div className='button buttonsel'>
                 <Link to="/contacts" className="orcamento" >Seja um Solviano!</Link>
             </div>
             <div className="sImg">

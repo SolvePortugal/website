@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import './footer.css';
-import {Link} from 'react-router-dom'
 
 
 
@@ -11,16 +10,17 @@ function footer() {
         <img id='logof' src={`${process.env.PUBLIC_URL}/images/footer.png`} alt="Logo"/>   
         <h3>Redes Sociais</h3>
         <div className='contactos'>
-            <img id='social' src={`${process.env.PUBLIC_URL}/images/social.png`} alt="social"/>
-            <div>
+            <div className='contactos-social'>
+            <img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
             <p>Solve - Soluções em Engenharia</p>
+            <img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
             <p>solve.pt</p>
+            <img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
             <p>Solve - Engineering Consulting</p>
-            </div>   
-           
+            </div>
         </div>
         <h3>Contactos</h3>
-        <div className='contactos'>
+        <div className='contactos adress'>
             <img id='location' src={`${process.env.PUBLIC_URL}/images/location.png`} alt="location"/>
             <p>Departamento de Engenharia Química da Universidade de Coimbra, Rua Sílvio Lima, Polo II - 3030-790, Coimbra - Portugal</p> 
         </div>

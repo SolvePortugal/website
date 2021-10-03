@@ -1,25 +1,9 @@
 
-.background{
-    margin-top: -15vh;
-    width: 100%;
-    height: 100vh;
-    
-}
-
-.content{
-    margin-top: -20vh;
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
 
 .info{
-    width: 30%;
-    height: 100vh;
+    width: 35%;
+    height: fit-content;
+    padding: 1rem 0;
     background-color: #0098DE;
     border-radius: 40px;
     display: flex;
@@ -46,19 +30,20 @@
     color: white;
 }
 .valores{
+    width: 65%;
     text-align: center;
-    margin-left: 10vw;
-    margin-top: 5vh;
+    place-self: center;
 }
 .valores img{
     margin-top: 5vh;
-    width: 70%;
+    width: 50%;
 }
 .valores h1{
     color: #0098DE;
 }
 
 .members{
+    padding: 0 10%;
     margin-top: 10vh;
     display: flex;
     flex-direction: row;
@@ -70,7 +55,6 @@
 
 .membt{
     width: 30vw;
-    height: 55vh;
 }
 .membt h1{
     text-align: center;
@@ -83,8 +67,7 @@
 }
 
 .members img{
-    width: 70vh;
-    height: 50vh;
+    width: 45%;
     margin-left: 10vw;
 }
 
@@ -102,7 +85,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
-    height: 140vh;
+    height: fit-content;
     
 }
 .services h1{
@@ -112,45 +95,40 @@
 .servicoss img{
     width: 40%;
 }
-.servicos1{
+.servicos1, .servicos2 {
     display:grid;
-    height: 70vh;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-content: space-around;  
-    row-gap: 5vh;
-    
-}
-.servicos2{
-    height: 70vh;
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-content: space-around;    
-    row-gap: 5vh;
-
+    grid-template-columns: repeat(1 , 1fr);
+    row-gap: 5vh;    
 }
 
-.servicos1 p{
+.service{
+    display: flex;
+    align-items: center;
+}
+.servicos1 .service {
+    justify-content: flex-start;
+    padding-right: 5%;
+}
+.servicos1 .service p{
+    margin-left: 5%;
+}
+
+.servicos2 .service {
+    justify-content: flex-end;
+    padding-left: 5%;
+}
+.servicos2 .service p{
+    margin-right: 5%;
+}
+
+.service p{
     text-align: left;
     justify-self: start;
-    width: 90%;
-    margin: auto 0;
-    color: #979797;
-
-}
-.servicos2 p{
-    text-align: right;
-    justify-self: end;    
-    width: 90%;
-    margin: auto 0;
     color: #979797;
 }
-.servicos1 img{
-    place-self: center;
-}
-.servicos2 img{
-    place-self: center;
+.service img{
+    width: 125px;
+    height: 125px;
 }
 .buttonserv{
     margin-top: 5vh;
@@ -168,9 +146,13 @@
     height: 80vh;
 }
 
+
 .qualidade img{
     width: 50%;
     margin-top: 5vh;
+}
+#qmobile{
+    display: none;
 }
 
 .qualidade h1{
@@ -218,16 +200,18 @@
     justify-content: center;
     height: 50vh;
     width: 70%;
-
-
 }
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #0098DE;
+    border-radius: 50%;
+    display: inline-block;
+  }
 
 .buttonsel{
     margin-top: 5vh;
-    width: 15rem;
-    background-color: #0098DE;
-    border-radius: 10px;
-    text-align: center;
+    margin-bottom: 0px;
 }
 .selective{
     display: flex;
@@ -257,4 +241,126 @@
 #midle{
     margin-top: 10vh;
     width: 10%;
+}
+
+@media (max-width: 830px) {
+    .info{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem 0;
+        background-color: #0098DE;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .valores img{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    .members{
+        padding: 0;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .membt{
+        width: 80vw;
+    }
+
+    .members img{
+        width: 65%;
+        height: 65%;
+        padding: 5% 0 ;
+        margin: 0;
+    }
+
+    .servicoss{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        background: none;
+        row-gap: 2vh;
+    }
+    .servicos1, .servicos2 {
+        row-gap: 2vh;    
+    }
+    .service{
+        display: flex;
+        align-items: center;
+    }
+    .servicos1 .service {
+        justify-content: flex-start;
+        padding-right: 5%;
+        padding-right: 0;
+    }
+    .servicos1 .service p{
+        margin-left: 5%;
+    }
+    
+    .servicos2 .service {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .servicos2 .service p{
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .service img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .qualidade{
+        height: fit-content;
+        padding: 5% 0;
+    }
+
+    .qualidade img{
+        width: 50%;
+        margin-top: 5vh;
+    }
+    #qmobile{
+        display: block;
+    }
+    #qdesktop{
+        display: none;
+    }
+
+    .cor{
+        display:block;
+        height: fit-content;
+    }
+    .cortex , .objetivos{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        text-align: left;
+    }
+    .cortex p, .objetivos p{
+        width: 80%;
+    }
+    .objetivos p{
+        text-align: initial;
+    }
+
+}
+@media (max-width: 500px) {
+    .qualidade img{
+        width: 80%;
+    }
 }

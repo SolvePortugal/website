@@ -8,6 +8,8 @@ import contact from './components/contact';
 import info from './components/info';
 import proj from './components/proj';
 import template from './components/template';
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 
@@ -16,15 +18,17 @@ import template from './components/template';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar/>
-        <Switch>
-          <Route path='/' exact component={Home}/>
-          <Route path='/contacts' exact component={contact}/>
-          <Route path='/info' exact component={info}/>
-          <Route path='/projects' exact component={proj}/>
-          <Route path='/projects/:id' exact component={template}/>
-        </Switch>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+        <ScrollToTop>
+          <Navbar/>
+          <Switch>
+            <Route path='/' exact component={Home}/>
+            <Route path='/contacts' exact component={contact}/>
+            <Route path='/info' exact component={info}/>
+            <Route path='/projects' exact component={proj}/>
+            <Route path='/projects/:id' exact component={template}/>
+          </Switch>
+        </ScrollToTop> 
       </Router>
     </div>
   );
