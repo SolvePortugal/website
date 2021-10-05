@@ -6,13 +6,18 @@ import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const key = process.env.REACT_APP_MAPS_KEY;
+  const emailjs_key_1 = process.env.REACT_APP_EMAILJS_KEY_1;
+  const emailjs_key_2 = process.env.REACT_APP_EMAILJS_KEY_2;
+  const emailjs_key_3 = process.env.REACT_APP_EMAILJS_KEY_3;
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_nqrk0gt', form.current, 'user_0TcaJrATTOu8IIKOO27Zq')
+    console.log(`${emailjs_key_3}`, `${emailjs_key_1}`, `${emailjs_key_2}`);
+
+    emailjs.sendForm(`${emailjs_key_3}`, `${emailjs_key_1}`, form.current, `${emailjs_key_2}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
