@@ -65,9 +65,15 @@ export const Contact = () => {
           <div className="redes">
             <h2>Redes Sociais:</h2>
             <div className='redes-icons'>
-              <img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
-              <img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
-              <img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
+              <a href="https://www.facebook.com/solve.pt/">
+                <img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
+              </a>
+              <a href="https://www.instagram.com/solve.pt/">
+                <img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
+              </a>
+              <a href="https://www.linkedin.com/company/solve-j%C3%BAnior-iniciativa-de-engenharia/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%3B3bj8DnRnSeuOsa75q%2F3HZw%3D%3D">
+                <img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
+              </a>
             </div>
           </div>
         </div>

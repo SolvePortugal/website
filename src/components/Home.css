@@ -188,8 +188,10 @@
     background: linear-gradient(180deg, rgba(217, 240, 250, 0) 0%, #D9F0FA 17.61%, #D9F0FA 83.02%, rgba(217, 240, 250, 0) 100%);
 }
 
-.depoimentos video{
+.depoimentos iframe{
     width: 60vw;
+    height: 60vh;
+
 }
 
 .parcerias {

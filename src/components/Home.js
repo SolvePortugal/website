@@ -16,7 +16,7 @@ function Home() {
             <div className='wrapper'>
                 <div className='text'>
                     <h1>Quem Somos?</h1>
-                    <p>Somos uma júnior iniciativa com sede em Coimbra, Portugal, com foco na realização de serviços de consultoria sustentável especializada. A Solve - Soluções em Engenharia foi idealizada por alunos de Engenharia Química e Engenharia Civil,  e contamos hoje com uma equipa multidisciplinar de 24 alunos de diversas áreas do conhecimento da FCTUC.</p>
+                    <p>Somos uma júnior iniciativa com sede em Coimbra, Portugal, com foco na realização de serviços de consultoria sustentável especializada. A Solve - Soluções em Engenharia foi idealizada por alunos de Engenharia Química e Engenharia Civil,  e contamos hoje com uma equipa multidisciplinar de 21 alunos de diversas áreas do conhecimento da FCTUC.</p>
                     <div className='button'>
                         <Link to="/info" className="quemsomos">Conheça-nos melhor!</Link>
                     </div>
@@ -58,8 +58,7 @@ function Home() {
                 <p>A Solve - Soluções em Engenharia preza por uma mentalidade sustentável em todos os seus projetos e serviços. Tendo isso em mente, pretendemos atuar em todo o ciclo da Economia Circular, desde a otimização de produtos e processos até a recolha e tratamento de resíduos. Também oferecemos outros serviços de logística e gestão sustentável de processos e produtos.</p>
             </div>
             <div className='depoimentos'>
-                <video controls autostart="true" type="video/mp4" src={`${process.env.PUBLIC_URL}/images/video.mp4`}  muted autoPlay  />
-            </div>
+            <iframe src="https://www.youtube.com/embed/oOLSdo8OpX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div className='parcerias'>
                 <h1>Parcerias</h1>
                 <div className='grid1'>
