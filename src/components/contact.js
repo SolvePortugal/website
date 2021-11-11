@@ -42,7 +42,7 @@ export const Contact = () => {
               src={`${process.env.PUBLIC_URL}/images/phone.png`}
               alt="phone"
             />
-            <p>+351 963 901 599</p>
+            <p>+351 932 125 672</p>
             <img
               src={`${process.env.PUBLIC_URL}/images/mail.png`}
               alt="mail"

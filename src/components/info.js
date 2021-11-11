@@ -95,7 +95,7 @@ function info() {
             <h1>Processo Selectivo</h1>
             <p>Gostaste de nós? Queres entrar para a equipa?</p>
             <div className='button buttonsel'>
-                <Link to="/contacts" className="orcamento" >Seja um Solviano!</Link>
+                <a href="https://linktr.ee/solveportugal" className="orcamento" >Seja um Solviano!</a>
             </div>
             <div className="sImg">
                 <img id="side" src={`${process.env.PUBLIC_URL}/images/simg1.png`} alt="selective"/>

@@ -31,7 +31,7 @@
     margin-top: -7vh;
     margin-left: 20vh;
     width: 30vw;
-    height: 140vh;
+    height: 120vh;
     background-color: #0098DE;
     border-radius: 50px;
 
@@ -78,6 +78,7 @@
 .projetos{
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     margin-top: -55vh;
     width: 95vw;
@@ -91,10 +92,7 @@
 .projetos img{
     width: 20%;
     height: fit-content;
-    margin-left: 5vw;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
 }
 
 .diferenciais{
@@ -160,12 +158,10 @@
 }
 .services-grid{
     margin-top: 5vh;
+    width: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
-    width: 40%;
-    /* height: 35%; */
-    align-content: space-between;    
+    grid-row-gap: 20px;
 }
 .services-grid img{
     width: 80%;
@@ -283,12 +279,9 @@
     }
     
     .projetos img{
-        margin:5% 0;
         width: 20%;
-        position: relative;
-        top: unset;
-        transform: unset;
-
+        height: fit-content;
+        margin: 5% 0;
     }
 
     .dif-wrapper{
@@ -414,7 +407,7 @@
     .retangulo{
         margin: 10vh 10% 0;
         width: 80%;
-        height: 112vh;
+        height: 120vh;
         background-color: #0098DE;
         border-radius: 50px;
     
@@ -460,7 +453,6 @@
         position: relative;
         top: unset;
         transform: unset;
-
     }
 
     .dif-wrapper{

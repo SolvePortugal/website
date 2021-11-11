@@ -1,5 +1,6 @@
 import React ,{useState, useEffect}from 'react'
 import {Link} from 'react-router-dom'
+import { isMobile } from 'react-device-detect';
 import './Navbar.css';
 
 
@@ -24,8 +25,8 @@ function Navbar() {
     })
    
     return (
-        <>
-           <nav className={ `${'navbar'} ${showNav ? 'show-navbar' :  'hide-navbar'}`}>
+        <>        
+           <nav className={ isMobile ? 'navbar' : `${'navbar'} ${showNav ? 'show-navbar' :  'hide-navbar'}`}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 <img src={`${process.env.PUBLIC_URL}/images/Logo.png`} alt="logo"/>
