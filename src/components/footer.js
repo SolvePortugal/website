@@ -10,14 +10,20 @@ function footer() {
         <img id='logof' src={`${process.env.PUBLIC_URL}/images/footer.png`} alt="Logo"/>   
         <h3>Redes Sociais</h3>
         <div className='contactos'>
-            <div className='contactos-social'>
-            <img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
-            <p>Solve - Soluções em Engenharia</p>
-            <img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
-            <p>solve.pt</p>
-            <img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
-            <p>Solve - Engineering Consulting</p>
-            </div>
+					<div className='contactos-social'>
+					<a href="https://www.facebook.com/solve.pt/">
+						<img id='social' src={`${process.env.PUBLIC_URL}/images/F.svg`} alt="social"/>
+					</a>
+					<p>Solve - Soluções em Engenharia</p>
+					<a href="https://www.instagram.com/solve.pt/">
+						<img id='social' src={`${process.env.PUBLIC_URL}/images/I.svg`} alt="social"/>
+					</a>
+					<p>solve.pt</p>
+					<a href="https://www.linkedin.com/company/solve-j%C3%BAnior-iniciativa-de-engenharia/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%3B3bj8DnRnSeuOsa75q%2F3HZw%3D%3D">
+						<img id='social' src={`${process.env.PUBLIC_URL}/images/IN.svg`} alt="social"/>
+					</a>
+					<p>Solve - Engineering Consulting</p>
+					</div>
         </div>
         <h3>Contactos</h3>
         <div className='contactos adress'>
@@ -31,7 +37,7 @@ function footer() {
             </div>
             <div className='lado'>
                 <img id='phone' src={`${process.env.PUBLIC_URL}/images/phone.png`} alt="location"/>
-                <p>+351 963 901 599</p>
+                <p>+351 932 125 672</p>
             </div>
         </div>
       </div>
