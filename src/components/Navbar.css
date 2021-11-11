@@ -9,7 +9,6 @@
     top: 0;
     z-index: 999;
     width: 100vw;
-    overflow: hidden;
   }
   .hide-navbar{
     visibility: hidden;
@@ -29,7 +28,6 @@
   
   img{
     width: 3rem;
-    z-index: -1;
   }
   .navbar-logo {
     position: absolute;
@@ -50,7 +48,6 @@
     list-style: none;
     text-align: center;
     margin: 0 auto;
-    overflow: hidden;
   }
   
   .nav-item {
@@ -64,7 +61,6 @@
     text-decoration: none;
     padding: 0rem 2rem;
     height: 100%;
-    overflow: hidden;
   }
  
   
@@ -78,24 +74,15 @@
   }
   
   @media screen and (max-width: 600px) {
+    .navbar i{
+      color: #0098DE;
+    }
     .NavbarItems {
       position: relative;
     }
 
     .nav-item {
-      height: fit-content;
-    }
-
-    .navbar i{
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      z-index: 3;
-    }
-  
-    .fa-times {
-      color: white;
-      font-size: 2rem;
+      height: inherit;
     }
   
     .nav-menu {
@@ -104,17 +91,14 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 100vh;
-      position: fixed;
+      height: 90vh;
+      position: absolute;
       top:60px;
       left: -130%;
-      top: 0;
       opacity: 1;
       transition: all 0.5s ease;
-      justify-content: space-evenly;
-      margin: 0;
-      z-index: 1;
-      overflow: hidden;
+      justify-content: center;
+      top: 80px;
     }
   
     .nav-menu.active {
@@ -122,11 +106,10 @@
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
-      z-index: -1;
+      z-index: 1;
     }
   
     .nav-links {
-      margin:0;
       padding: 0px;
       text-align: center;
       width: 100%;
@@ -154,6 +137,11 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
     }
   
     .nav-links-mobile {
