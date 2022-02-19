@@ -58,7 +58,7 @@ function Home() {
                 <p>A Solve - Soluções em Engenharia preza por uma mentalidade sustentável em todos os seus projetos e serviços. Tendo isso em mente, pretendemos atuar em todo o ciclo da Economia Circular, desde a otimização de produtos e processos até a recolha e tratamento de resíduos. Também oferecemos outros serviços de logística e gestão sustentável de processos e produtos.</p>
             </div>
             <div className='depoimentos'>
-            <iframe src="https://www.youtube.com/embed/oOLSdo8OpX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            <iframe src="https://www.youtube.com/embed/oOLSdo8OpX4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>            </div>
             <div className='parcerias'>
                 <h1>Parcerias</h1>
                 <div className='grid1'>
