@@ -25,6 +25,7 @@
 }
 
 .next {
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
@@ -37,6 +38,14 @@
 
 .next img {
     width: 4vh;
+}
+
+.firstnr {
+    margin-block-start: -0.6em;
+}
+
+.secondnr {
+    margin-block-start: -1.8em;
 }
 
 .contact h1 {

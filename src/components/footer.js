@@ -37,7 +37,10 @@ function footer() {
             </div>
             <div className='lado'>
                 <img id='phone' src={`${process.env.PUBLIC_URL}/images/phone.png`} alt="location"/>
-                <p>+351 932 125 672</p>
+                <div className='nr'>
+                <p>+351 915 434 756</p>
+                <p>+351 916 914 480</p>
+                </div>
             </div>
         </div>
       </div>
