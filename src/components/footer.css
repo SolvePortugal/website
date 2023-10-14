@@ -60,6 +60,14 @@
     flex-direction: row;
 }
 
+.nr{
+    flex-direction: column;
+}
+
+.nr p{
+    margin-block: 0.2em;
+}
+
 .final img{
     height: 17px;
     margin-top: 10px;
